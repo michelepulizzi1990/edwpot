@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/s07/timer")
+@WebServlet("/s07/timer") //l'indirizzo che devo dare al mio server per ottenere questa risposta, per accedere a HttpServlet
 public class Timer extends HttpServlet {
     private static final long serialVersionUID = 1L;
 

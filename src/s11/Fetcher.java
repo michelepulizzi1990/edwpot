@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import dd.User;
 
-@WebServlet("/s11/fetch")
+@WebServlet("/s11/fetch") // a questa risorsa facciamo una doget e una dopost
 public class Fetcher extends HttpServlet {
     private static final long serialVersionUID = 1L;
 

@@ -10,13 +10,15 @@
 <script type="text/javascript">
     $(function() {
         $('#btnPlain').click(function() {
-            $.ajax({
+            $.ajax({ 
                 url : "s07.txt",
                 success : function(data) {
-                    $('#targetPlain').text(data);
+                    $('#targetPlain').text(data); 
                 }
             })
         })
+        
+        //tramite ajax noi stiamo facendo la richiesta 
 
         $('#btnLoad').click(function() {
             $('#targetLoad').load('s07.txt');
@@ -28,7 +30,7 @@
 
         $('#btnGetSrv').click(function() {
             $.get('/edwpot/s07/timerPlain', function(data) {
-                $('#targetGetSrv').val(data);
+                $('#targetGetSrv').val(data);  
             });
         });
     });

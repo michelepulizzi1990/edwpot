@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/s07/timerPlain")
+@WebServlet("/s07/timerPlain") //risorsa richiesta
 public class TimerPlain extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -20,7 +20,7 @@ public class TimerPlain extends HttpServlet {
         response.setContentType("text/plain");
         response.setCharacterEncoding("utf-8");
         try (PrintWriter writer = response.getWriter()) {
-            writer.println(LocalTime.now());
+            writer.println(LocalTime.now()); //mi ritorna l'orario
         }
     }
 
@@ -30,3 +30,5 @@ public class TimerPlain extends HttpServlet {
         doGet(request, response);
     }
 }
+
+
